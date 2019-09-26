@@ -15,5 +15,5 @@ COPY . /usr/src/app
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
 RUN python3.6 DjangoDocker/manage.py migrate
-EXPOSE 9000
-CMD ["python3.6","DjangoDocker/manage.py","runserver","0.0.0.0:9000" ]
+EXPOSE 8000
+CMD ["python3.6","DjangoDocker/manage.py","runserver","0.0.0.0:8000" ]
